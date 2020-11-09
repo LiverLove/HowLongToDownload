@@ -8,7 +8,7 @@ def how_long(size, speed=MAX_SPEED):
     time = ((float(size) * 1048576) / float(speed)) / 60
     hour = int(time // 60)
     minute = int(time % 60)
-    minute = round(minute)
+    minute = round(minute) * 0.6
     if time > 1440:
         day = hour // 24
         hour %= 24
